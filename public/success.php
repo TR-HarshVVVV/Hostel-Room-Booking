@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Successful - Hostel Booking</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <style>
         .success-icon {
             font-size: 5em;
@@ -138,7 +138,7 @@
             <?php endif; ?>
         </div>
 
-        <?php include "../includes/footer.php"; ?>
+        <?php include "/includes/footer.php"; ?>
     </div>
 </body>
 
