@@ -2,12 +2,12 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Check if Heroku ClearDB URL exists
-$cleardb_url = getenv('CLEARDB_DATABASE_URL');
+// Check for JawsDB URL (Heroku)
+$jawsdb_url = getenv('JAWSDB_URL');
 
-if ($cleardb_url) {
-    // Running on Heroku - parse the URL
-    $url = parse_url($cleardb_url);
+if ($jawsdb_url) {
+    // Running on Heroku - parse the JawsDB URL
+    $url = parse_url($jawsdb_url);
 
     $servername = $url["host"];
     $username = $url["user"];
